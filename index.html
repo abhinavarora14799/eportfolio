@@ -5,233 +5,846 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abhinav Arora</title>
+  <title>Abhinav Arora | AI Engineer</title>
   <link rel="stylesheet" href="./styles.css">
   <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <!-- particles.js library -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <!-- Three.js for 3D effects -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <!-- GSAP for smoother animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 </head>
 
 <body>
-  <section id="about-me">
-    <nav>
-      <div class="personal__logo">Abhinav Arora</div>
-      <ul class="nav__link--list">
-        <li class="nav__link">
-          <a href="#languages" class="
-            nav__link--anchor
-            link__hover-effect
-            link__hover-effect--black
-          ">Languages</a>
-        </li>
-        <li class="nav__link">
-          <a href="#projects" class="
-            nav__link--anchor
-            link__hover-effect
-            link__hover-effect--black
-          ">Projects</a>
-        </li>
-        <li class="nav__link">
-          <a href="mailto:abhinavaroraa14799@gmail.com" class="
-            nav__link--anchor
-            nav__link--anchor-primary
-          ">Contact</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="flex flex-1">
-      <div class="about-me__info row">
-        <div class="about-me__info--container">
-          <figure class="about-me__picture--mask">
-            <img src="./assets/me.jpeg" class="about-me__picture" alt="Picture of Me!">
-          </figure>
-          <h1 class="about-me__info--title">
-            Hello! I'm <span class="text--purple">Abhinav Arora</span>&nbsp;<span class="wave">👋</span>
-          </h1>
-          <p class="about-me__info--para">
-            Welcome to My E-Portfolio !
-            I'm a current <strong class="text--purple"></strong>Software Engineer</strong> at BEGA North America<br>An Agile Developer with notable experience in Front End Development, Web-Applications Development, Object Oriented Programming, IT System Administration, and Cloud Computing.
-			<br>
-            Happy to Connect with you !.
-          </p>
-          <div class="about-me__links">
-            <a href="https://www.linkedin.com/in/abhinavarora14799/" class="about-me__link">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="https://github.com/abhinavarora14799" class="about-me__link">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="mailto:abhinavaroraa14799@gmail.com" class="about-me__link">
-              <i class="far fa-envelope"></i>
-          </div>
-        </div>
-        <figure class="about-me__img--container">
-          <img src="./assets/undraw_websites.svg" class="about-me__img" alt="">
-        </figure>
+  <!-- Welcome Intro Screen -->
+  <div class="intro">
+    <div class="intro__content">
+      <h1 class="intro__title">Hi, I'm Abhinav Arora</h1>
+      <p class="intro__subtitle">Welcome</p>
+      <div class="intro__scroll-indicator">
+        <span>Please scroll or press any key to continue</span>
+        <i class="fas fa-chevron-down"></i>
       </div>
     </div>
-  </section>
-  <section id="languages">
-    <div class="container">
-      <div class="row">
-        <h1 class="section__title">This is my <span class="text--purple">technology stack</span></h1>
-        <div class="language__list">
-          <div class="language">
-            <figure class="language__img--wrapper">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
-                alt="Html Logo" class="language__img" />
-            </figure>
-            <span class="language__name">HTML</span>
-          </div>
-          <div class="language">
-            <figure class="language__img--wrapper">
-              <img src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="CSS Logo"
-                class="language__img" />
-            </figure>
-            <span class="language__name">CSS</span>
-          </div>
-          <div class="language">
-            <figure class="language__img--wrapper">
-              <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="JavaScript Logo"
-                class="language__img" />
-            </figure>
-            <span class="language__name">JavaScript</span>
-          </div>
-          <div class="language">
-            <figure class="language__img--wrapper">
-              <img src="https://cdn.iconscout.com/icon/free/png-256/typescript-3521774-2945272.png"
-                alt="TypeScript Logo" class="language__img" />
-            </figure>
-            <span class="language__name">TypeScript</span>
-          </div>
-          <div class="language">
-            <figure class="language__img--wrapper">
-              <img src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" alt="React Logo"
-                class="language__img" />
-            </figure>
-            <span class="language__name">React</span>
-          </div>
-          <div class="language">
-            <figure class="language__img--wrapper">
-              <img
-                src="./assets/python.png"
-                alt="Python Logo" class="language__img" />
-            </figure>
-            <span class="language__name">Python</span>
-          </div>
-          <div class="language">
-            <figure class="language__img--wrapper">
-              <img src="https://mobx.js.org/img/mobx.png" alt="MobX Logo" class="language__img" />
-            </figure>
-            <span class="language__name">MobX</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="projects">
-    <div class="container">
-      <div class="row">
-        <h1 class="section__title">Here are some of my <span class="text--purple">projects</span></h1>
-        <ul class="project__list">
-          <li class="project">
-            <div class="project__wrapper">
-              <img src="./assets/loopit.png" class="project__img" alt="Chrome Speak">
-              <div class="project__description">
-                <h3 class="project__description--title">Chrome Speak</h3>
-                <h4 class="project__description--sub-title">
-                  JavaScript,TypeScript,HTML
-                </h4>
-                <p class="project__description--para">
-                  • Collaborated and created an extension on Google Chrome named as Chrome Speak with Amazon Alexa.
-                  • Added voice control feature for disabled support that assisted webpage navigation on Google Chrome. 
-                  • My role in the project was to configure the Initial setup, add google chrome as a client, add, and Integrate the Voice Control feature USING HTML5 Speech recoginition API called Artyom.js.
-                </p>
-                <div class="project__description--links">
-                  <a href="https://github.com/CSUF-ACM/chrome-speak" target="_blank"      class="project__description--link">
-                    <i class="fab fa-github"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="project">
-            <div class="project__wrapper">
-              <img src="./assets/loopit2.png" class="project__img" alt="Google Maps API Project">
-              <div class="project__description">
-                <h3 class="project__description--title">Google Maps API</h3>
-                <h4 class="project__description--sub-title">
-                  C++, JSON, JavaScript
-                </h4>
-                <p class="project__description--para">
-                  • Designed a Program in C++ which integrates Google Maps API hosted in Google’s Servers It Converts a Physical mailing address to its corresponding geolocations using Geocoding API, also added the Reverse  geolocation feature which enables the user to obtain the Address from it's Geo-Codes.
-                  • Integrated the Elevation feature which output the sea level elevation in feet from coordinates using the Elevation API.
-                </p>
-                <div class="project__description--links">
-                  <a href="https://github.com/abhinavarora14799" target="_blank" class="project__description--link">
-                    <i class="fab fa-github"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </li>
-          <ul class="project__list">
-            <li class="project">
-              <div class="project__wrapper">
-                <img src="./assets/artificial-intelligence.png" class="project__img" alt="CareerFair.AI project">
-                <div class="project__description">
-                  <h3 class="project__description--title">CareerFair.AI Project <span class="text--purple"></span>CSUF </h3>
-                  <h4 class="project__description--sub-title">
-                    JavaScript,TypeScript,HTML,CSS
-                  </h4>
-                  <p class="project__description--para">
-                    • Developed a custom web-portal to embed virtual agent-mentors to assist students with Career Advising 24/7.
-                    • Leveraged the inbuilt React Toolkit to create frontend features, and responsive web-based User Interface.
-                    • Merged, cleansed, and prepared datasets used to train AI Algorithms and Machine Learning Models
-                  </p>
-                  <div class="project__description--links">
-                    <a href="http://news.fullerton.edu/press-release/mentoring-platform-leverages-ai-to-boost-participation-in-stem/" class="project__description--link">
-                      <i class="fas fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </li>
+    <div id="intro-particles"></div>
+  </div>
+
+  <div class="theme-switch-wrapper">
+    <label class="theme-switch" for="checkbox">
+      <input type="checkbox" id="checkbox" />
+      <div class="slider round"></div>
+    </label>
+    <em>Toggle Dark Mode</em>
+  </div>
+
+  <header>
+    <nav class="nav">
+      <div class="nav__logo">AA</div>
+      <div class="nav__menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#hero" class="nav__link active">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
         </ul>
       </div>
-    </div>
-  </section>
-  <footer>
-    <div class="row footer__row">
-        <span class="footer__logo--popper">
-          Top
-          <i class="fas fa-arrow-up"></i>
-        </span>
-      </a>
-      <div class="footer__social--list">
-        <a href="https://github.com/abhinavarora14799" target="_blank" class="
-          footer__social--link
-          link__hover-effect
-          link__hover-effect--white
-        " target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/abhinavarora14799/" target="_blank" class="
-          footer__social--link
-          link__hover-effect
-          link__hover-effect--white
-        " target="_blank">LinkedIn</a>
-        <a href="mailto:abhinavaroraa14799@gmail.com" target="_blank" class="
-          footer__social--link
-          link__hover-effect
-          link__hover-effect--white
-        " target="_blank">Email</a>
-        <a href="./assets/Resume_AbhinavArora_Main_001.pdf" target="_blank" class="
-          footer__social--link
-          link__hover-effect
-          link__hover-effect--white
-        " target="_blank">Resume</a>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
-      <div class="footer__copyright">Copyright © 2021 Abhinav Arora</div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <!-- particles.js container -->
+      <div id="particles-js"></div> 
+      <div class="hero__container">
+        <div data-aos="fade-right" class="hero__content">
+          <h1 class="hero__title">
+            <span class="highlight">Hello, I'm</span>
+            <br>Abhinav Arora
+          </h1>
+          <h2 class="hero__subtitle">Artificial Intelligence Engineer</h2>
+          <p class="hero__description">
+            Building intelligent solutions at New Hampshire Ball Bearings Inc.
+          </p>
+          <div class="hero__cta">
+            <a href="#contact" class="btn btn-primary">Get in Touch</a>
+            <a href="./assets/Resume_Abhinav__Arora_.pdf" target="_blank" class="btn btn-secondary">Download CV</a>
+          </div>
+        </div>
+        <div data-aos="fade-left" class="hero__image">
+          <img src="./assets/profile_photo.jpeg" alt="Abhinav Arora" class="hero__img">
+          <div class="hero__blob"></div>
+        </div>
+      </div>
+      <div class="hero__scroll">
+        <a href="#about" class="scroll-down">
+          <div class="mouse">
+            <span></span>
+          </div>
+          <div class="arrow">
+            <span></span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+      <div class="section__container">
+        <div class="section__header" data-aos="fade-up">
+          <h2 class="section__title">About Me</h2>
+          <span class="section__subtitle">My Introduction</span>
+        </div>
+        <div class="about__container">
+          <div class="about__image" data-aos="fade-right">
+            <img src="./assets/profile_photo.jpeg" alt="Abhinav Arora" class="about__img">
+          </div>
+          <div class="about__content" data-aos="fade-left">
+            <p class="about__description">
+              An Artificial Intelligence Engineer who blends machine learning, deep learning, and data analysis with today's most useful AI capabilities. My projects link large‑language‑model integrations with retrieval‑augmented generation (RAG), and run securely on both cloud, and local compliant solutions when data must stay inside the plant. I design AI agents that handle routine tasks end‑to‑end—monitoring equipment, flagging quality issues, or compiling reports—while embedding strong security, privacy, and compliance controls at every layer. The result is clear insight, safer data, and smoother operations wherever AI meets manufacturing.
+            </p>
+            <div class="about__info">
+              <div class="about__box">
+                <i class="fas fa-briefcase about__icon"></i>
+                <h3 class="about__title">Experience</h3>
+                <span class="about__subtitle">6+ Years</span>
+              </div>
+              <div class="about__box">
+                <i class="fas fa-graduation-cap about__icon"></i>
+                <h3 class="about__title">Education</h3>
+                <span class="about__subtitle">BS in Computer Science</span>
+              </div>
+              <div class="about__box">
+                <i class="fas fa-award about__icon"></i>
+                <h3 class="about__title">Expertise</h3>
+                <span class="about__subtitle">AI & Cloud Solutions</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Photo Gallery -->
+        <div class="gallery__container" data-aos="fade-up">
+          <h3 class="gallery__title">Gallery</h3>
+          <div class="gallery__grid">
+            <img src="./assets/me.jpeg" alt="Profile Photo" class="gallery__img">
+            <img src="./assets/nhbb.jpeg" alt="NHBB Photo" class="gallery__img">
+            <img src="./assets/graduation.jpeg" alt="Graduation Photo" class="gallery__img">
+            <img src="./assets/Corportategames_bega.jpeg" alt="Corporate Games Bega" class="gallery__img">
+            <img src="./assets/Qlik_2024.jpeg" alt="Qlik 2024" class="gallery__img">
+            <img src="./assets/COver.jpeg" alt="Cover Photo" class="gallery__img"> 
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+      <div class="section__container">
+        <div class="section__header" data-aos="fade-up">
+          <h2 class="section__title">Skills</h2>
+          <span class="section__subtitle">My Technical Expertise</span>
+        </div>
+        <div class="skills__grid">
+          <!-- AI & Machine Learning -->
+          <div class="skills__content" data-aos="fade-up">
+            <h3 class="skills__title"><i class="fas fa-brain skills__category-icon"></i> AI & Machine Learning</h3>
+            <div class="skills__list">
+              <span class="skills__tag">LLM Engineering</span>
+              <span class="skills__tag">Fine-tuning Custom Models</span>
+              <span class="skills__tag">RAG (Retrieval-Augmented Generation)</span>
+              <span class="skills__tag">Context Window Optimization</span>
+              <span class="skills__tag">Model Quantization</span>
+              <span class="skills__tag">TensorFlow</span>
+              <span class="skills__tag">PyTorch</span>
+              <span class="skills__tag">Data Analysis (Pandas, NumPy)</span>
+              <span class="skills__tag">OpenAI API</span>
+              <span class="skills__tag">Generative AI</span>
+            </div>
+          </div>
+
+          <!-- Programming Languages -->
+          <div class="skills__content" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="skills__title"><i class="fas fa-code skills__category-icon"></i> Programming Languages</h3>
+            <div class="skills__list">
+              <span class="skills__tag">Python</span>
+              <span class="skills__tag">JavaScript</span>
+              <span class="skills__tag">SQL</span>
+              <span class="skills__tag">C++</span>
+              <span class="skills__tag">Java</span>
+              <span class="skills__tag">Go</span>
+              <span class="skills__tag">Rust</span>
+              <span class="skills__tag">Swift</span>
+              <span class="skills__tag">R</span>
+            </div>
+          </div>
+
+          <!-- Backend & Frameworks -->
+          <div class="skills__content" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="skills__title"><i class="fas fa-server skills__category-icon"></i> Backend & Frameworks</h3>
+            <div class="skills__list">
+              <span class="skills__tag">Laravel</span>
+              <span class="skills__tag">Django</span>
+              <span class="skills__tag">Node.js</span>
+              <span class="skills__tag">GraphQL</span>
+            </div>
+          </div>
+
+          <!-- Frontend Development -->
+          <div class="skills__content" data-aos="fade-up" data-aos-delay="300">
+            <h3 class="skills__title"><i class="fas fa-desktop skills__category-icon"></i> Frontend Development</h3>
+            <div class="skills__list">
+              <span class="skills__tag">HTML5</span>
+              <span class="skills__tag">CSS3</span>
+              <span class="skills__tag">React</span>
+              <span class="skills__tag">TypeScript</span>
+            </div>
+          </div>
+
+          <!-- Cloud & DevOps -->
+          <div class="skills__content" data-aos="fade-up" data-aos-delay="400">
+            <h3 class="skills__title"><i class="fas fa-cloud skills__category-icon"></i> Cloud & DevOps</h3>
+            <div class="skills__list">
+              <span class="skills__tag">AWS</span>
+              <span class="skills__tag">Azure</span>
+              <span class="skills__tag">Terraform</span>
+              <span class="skills__tag">Docker</span>
+              <span class="skills__tag">Jenkins</span>
+              <span class="skills__tag">Containerization</span>
+              <span class="skills__tag">Azure SQL Migration</span>
+            </div>
+          </div>
+
+          <!-- Databases & Tools -->
+          <div class="skills__content" data-aos="fade-up" data-aos-delay="500">
+            <h3 class="skills__title"><i class="fas fa-database skills__category-icon"></i> Databases & Tools</h3>
+            <div class="skills__list">
+              <span class="skills__tag">Oracle</span>
+              <span class="skills__tag">SQL Server</span>
+              <span class="skills__tag">MySQL</span>
+              <span class="skills__tag">PostgreSQL</span>
+              <span class="skills__tag">Git</span>
+              <span class="skills__tag">JIRA</span>
+              <span class="skills__tag">Qlik</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+      <div class="section__container">
+        <div class="section__header" data-aos="fade-up">
+          <h2 class="section__title">Projects</h2>
+          <span class="section__subtitle">Most Recent Work</span>
+        </div>
+        <div class="projects__container">
+          <!-- Project 1 -->
+          <div class="project__card" data-aos="fade-up">
+            <img src="./assets/loopit.png" alt="Chrome Speak" class="project__img">
+            <div class="project__overlay">
+              <h3 class="project__title">Chrome Speak</h3>
+              <p class="project__description">
+                Voice-controlled Chrome extension integrated with Amazon Alexa for web navigation, especially designed for accessibility support.
+              </p>
+              <div class="project__tech">
+                <span class="tech__tag">JavaScript</span>
+                <span class="tech__tag">TypeScript</span>
+                <span class="tech__tag">HTML5</span>
+              </div>
+              <div class="project__links">
+                <a href="https://github.com/CSUF-ACM/chrome-speak" target="_blank" class="project__link">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="project__link">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 2 -->
+          <div class="project__card" data-aos="fade-up" data-aos-delay="200">
+            <img src="./assets/images.png" alt="Order Entry Automation" class="project__img">
+            <div class="project__overlay">
+              <h3 class="project__title">Order Entry Automation</h3>
+              <p class="project__description">
+                Leveraged generative AI at BEGA North America to automate order entry processes, increasing efficiency and reducing manual errors.
+              </p>
+              <div class="project__tech">
+                <span class="tech__tag">Python</span>
+                <span class="tech__tag">OpenAI</span>
+                <span class="tech__tag">Process Automation</span>
+              </div>
+              <div class="project__links">
+                <a href="#" class="project__link">
+                  <i class="fas fa-link"></i>
+                </a>
+                <a href="#" class="project__link">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 3 -->
+          <div class="project__card" data-aos="fade-up" data-aos-delay="400">
+            <img src="./assets/artificial-intelligence.png" alt="CareerFair.AI" class="project__img">
+            <div class="project__overlay">
+              <h3 class="project__title">CareerFair.AI</h3>
+              <p class="project__description">
+                Web portal with virtual AI mentors for 24/7 career advising, featuring responsive design and machine learning models.
+              </p>
+              <div class="project__tech">
+                <span class="tech__tag">React</span>
+                <span class="tech__tag">JavaScript</span>
+                <span class="tech__tag">Machine Learning</span>
+              </div>
+              <div class="project__links">
+                <a href="http://news.fullerton.edu/press-release/mentoring-platform-leverages-ai-to-boost-participation-in-stem/" target="_blank" class="project__link">
+                  <i class="fas fa-link"></i>
+                </a>
+                <a href="#" class="project__link">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 4 (Qlik Migration Project) -->
+          <div class="project__card" data-aos="fade-up" data-aos-delay="600">
+            <img src="./assets/Qlik_2024.jpeg" alt="Qlik Cloud Migration" class="project__img">
+            <div class="project__overlay">
+              <h3 class="project__title">Qlik Cloud Migration</h3>
+              <p class="project__description">
+                Led the zero‑downtime migration of 400+ on‑prem Qlik apps—including global KPI dashboards for executives—to Qlik Cloud, revamping pipelines and security, and layered in OpenAI chatbots for natural‑language queries, slashing load times by 40% and lifting self‑service analytics by 60%.
+              </p>
+              <div class="project__tech">
+                <span class="tech__tag">Qlik</span>
+                <span class="tech__tag">Cloud Migration</span>
+                <span class="tech__tag">OpenAI</span>
+                <span class="tech__tag">Generative AI</span>
+              </div>
+              <div class="project__links">
+                <a href="#" class="project__link">
+                  <i class="fas fa-link"></i>
+                </a>
+                <a href="#" class="project__link">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+      <div class="section__container">
+        <div class="section__header" data-aos="fade-up">
+          <h2 class="section__title">Contact Me</h2>
+          <span class="section__subtitle">Get in Touch</span>
+        </div>
+        <div class="contact__container">
+          <div class="contact__info" data-aos="fade-right">
+            <div class="contact__card">
+              <i class="fas fa-envelope contact__card-icon"></i>
+              <h3 class="contact__card-title">Email</h3>
+              <span class="contact__card-data">abhinavaroraa14799@gmail.com</span>
+              <a href="mailto:abhinavaroraa14799@gmail.com" class="contact__button">
+                Write me <i class="fas fa-arrow-right contact__button-icon"></i>
+              </a>
+            </div>
+            <div class="contact__card">
+              <i class="fab fa-linkedin-in contact__card-icon"></i>
+              <h3 class="contact__card-title">LinkedIn</h3>
+              <span class="contact__card-data">Abhinav Arora</span>
+              <a href="https://www.linkedin.com/in/abhinavarora14799/" target="_blank" class="contact__button">
+                Connect <i class="fas fa-arrow-right contact__button-icon"></i>
+              </a>
+            </div>
+            <div class="contact__card">
+              <i class="fab fa-github contact__card-icon"></i>
+              <h3 class="contact__card-title">GitHub</h3>
+              <span class="contact__card-data">abhinavarora14799</span>
+              <a href="https://github.com/abhinavarora14799" target="_blank" class="contact__button">
+                Follow <i class="fas fa-arrow-right contact__button-icon"></i>
+              </a>
+            </div>
+            <div class="contact__card">
+              <i class="fas fa-file-alt contact__card-icon"></i>
+              <h3 class="contact__card-title">Resume</h3>
+              <span class="contact__card-data">Download CV</span>
+              <a href="./assets/Resume_Abhinav__Arora_.pdf" target="_blank" class="contact__button">
+                View Resume <i class="fas fa-arrow-right contact__button-icon"></i>
+              </a>
+            </div>
+          </div>
+          <form action="#" class="contact__form" data-aos="fade-left">
+            <div class="contact__form-div">
+              <label class="contact__form-tag">Name</label>
+              <input type="text" class="contact__form-input" placeholder="Your Name">
+            </div>
+            <div class="contact__form-div">
+              <label class="contact__form-tag">Email</label>
+              <input type="email" class="contact__form-input" placeholder="Your Email">
+            </div>
+            <div class="contact__form-div contact__form-area">
+              <label class="contact__form-tag">Message</label>
+              <textarea name="" id="" cols="30" rows="10" class="contact__form-input" placeholder="Your Message"></textarea>
+            </div>
+            <button class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Background 3D element -->
+    <div id="background-3d" class="background-3d"></div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__content">
+        <h1 class="footer__title">Abhinav Arora</h1>
+        <p class="footer__subtitle">Artificial Intelligence Engineer</p>
+      </div>
+      <div class="footer__social">
+        <a href="https://www.linkedin.com/in/abhinavarora14799/" target="_blank" class="footer__social-link" data-tooltip="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/abhinavarora14799" target="_blank" class="footer__social-link" data-tooltip="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:abhinavaroraa14799@gmail.com" class="footer__social-link" data-tooltip="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="./assets/Resume_Abhinav__Arora_.pdf" target="_blank" class="footer__social-link" data-tooltip="Resume">
+          <i class="fas fa-file-pdf"></i>
+        </a>
+      </div>
+      <p class="footer__copy">© 2024 Abhinav Arora. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    // Initialize AOS animation library
+    AOS.init({
+      duration: 800,
+      easing: 'ease',
+      once: true,
+      offset: 100
+    });
+
+    // Intro screen transitions
+    document.addEventListener('DOMContentLoaded', function() {
+      const intro = document.querySelector('.intro');
+      const main = document.querySelector('main');
+      const header = document.querySelector('header');
+      
+      // Initially hide main content and header
+      main.style.opacity = '0';
+      header.style.opacity = '0';
+      
+      // Show main content after scroll or timeout
+      function showMainContent() {
+        intro.style.transform = 'translateY(-100%)';
+        main.style.opacity = '1';
+        header.style.opacity = '1';
+      }
+      
+      // Listen for scroll event to trigger transition
+      window.addEventListener('scroll', function() {
+        const scrollPos = window.scrollY;
+        if (scrollPos > 10) {
+          showMainContent();
+          // Remove the event listener after triggering
+          window.removeEventListener('scroll', this);
+        }
+      });
+      
+      // Listen for any keypress
+      document.addEventListener('keydown', function() {
+        showMainContent();
+        // Remove event listener after triggering
+        document.removeEventListener('keydown', arguments.callee);
+      });
+      
+      // Also add click event to the scroll indicator
+      document.querySelector('.intro__scroll-indicator').addEventListener('click', function() {
+        showMainContent();
+      });
+      
+      // Fallback: show main content after 8 seconds if no interaction
+      setTimeout(showMainContent, 8000);
+
+      // Setup particles for intro screen
+      particlesJS('intro-particles', {
+        "particles": {
+          "number": {
+            "value": 80,
+            "density": {
+              "enable": true,
+              "value_area": 800
+            }
+          },
+          "color": {
+            "value": "#D4AF37" 
+          },
+          "shape": {
+            "type": "circle",
+            "stroke": {
+              "width": 0,
+              "color": "#000000"
+            }
+          },
+          "opacity": {
+            "value": 0.5,
+            "random": false
+          },
+          "size": {
+            "value": 3,
+            "random": true
+          },
+          "line_linked": {
+            "enable": true,
+            "distance": 150,
+            "color": "#D4AF37",
+            "opacity": 0.4,
+            "width": 1
+          },
+          "move": {
+            "enable": true,
+            "speed": 3,
+            "direction": "none",
+            "random": false,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false
+          }
+        },
+        "interactivity": {
+          "detect_on": "canvas",
+          "events": {
+            "onhover": {
+              "enable": true,
+              "mode": "repulse"
+            },
+            "onclick": {
+              "enable": true,
+              "mode": "push"
+            },
+            "resize": true
+          }
+        },
+        "retina_detect": true
+      });
+    });
+
+    // particles.js configuration for main content
+    particlesJS('particles-js', 
+      {
+        "particles": {
+          "number": {
+            "value": 80,
+            "density": {
+              "enable": true,
+              "value_area": 800
+            }
+          },
+          "color": {
+            "value": "#D4AF37" // Updated to gold color
+          },
+          "shape": {
+            "type": "circle",
+            "stroke": {
+              "width": 0,
+              "color": "#000000"
+            },
+            "polygon": {
+              "nb_sides": 5
+            }
+          },
+          "opacity": {
+            "value": 0.5,
+            "random": false,
+            "anim": {
+              "enable": false,
+              "speed": 1,
+              "opacity_min": 0.1,
+              "sync": false
+            }
+          },
+          "size": {
+            "value": 3,
+            "random": true,
+            "anim": {
+              "enable": false,
+              "speed": 40,
+              "size_min": 0.1,
+              "sync": false
+            }
+          },
+          "line_linked": {
+            "enable": true,
+            "distance": 150,
+            "color": "#D4AF37", // Updated to gold color
+            "opacity": 0.4,
+            "width": 1
+          },
+          "move": {
+            "enable": true,
+            "speed": 6,
+            "direction": "none",
+            "random": false,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false,
+            "attract": {
+              "enable": false,
+              "rotateX": 600,
+              "rotateY": 1200
+            }
+          }
+        },
+        "interactivity": {
+          "detect_on": "canvas",
+          "events": {
+            "onhover": {
+              "enable": true,
+              "mode": "repulse"
+            },
+            "onclick": {
+              "enable": true,
+              "mode": "push"
+            },
+            "resize": true
+          },
+          "modes": {
+            "grab": {
+              "distance": 400,
+              "line_linked": {
+                "opacity": 1
+              }
+            },
+            "bubble": {
+              "distance": 400,
+              "size": 40,
+              "duration": 2,
+              "opacity": 8,
+              "speed": 3
+            },
+            "repulse": {
+              "distance": 200,
+              "duration": 0.4
+            },
+            "push": {
+              "particles_nb": 4
+            },
+            "remove": {
+              "particles_nb": 2
+            }
+          }
+        },
+        "retina_detect": true
+      }
+    );
+
+    // 3D Background using Three.js
+    document.addEventListener('DOMContentLoaded', function() {
+      // Setup Three.js Scene for background
+      const container = document.getElementById('background-3d');
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+      
+      // Scene, camera, renderer
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
+      const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+      
+      renderer.setSize(width, height);
+      renderer.setClearColor(0x000000, 0); // Transparent background
+      renderer.setPixelRatio(window.devicePixelRatio);
+      container.appendChild(renderer.domElement);
+      
+      // Create background elements
+      const particlesGeometry = new THREE.BufferGeometry();
+      const particlesCount = 2000;
+      
+      const posArray = new Float32Array(particlesCount * 3);
+      
+      for(let i = 0; i < particlesCount * 3; i++) {
+        posArray[i] = (Math.random() - 0.5) * 50;
+      }
+      
+      particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
+      
+      // Gold material for particles
+      const particlesMaterial = new THREE.PointsMaterial({
+        size: 0.05,
+        color: 0xD4AF37,
+        transparent: true,
+        opacity: 0.8,
+        blending: THREE.AdditiveBlending
+      });
+      
+      const particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial);
+      scene.add(particlesMesh);
+      
+      // Add some floating geometric shapes
+      const shapeCount = 15;
+      const shapes = [];
+      
+      for(let i = 0; i < shapeCount; i++) {
+        let geometry;
+        const random = Math.random();
+        
+        if(random < 0.3) {
+          geometry = new THREE.OctahedronGeometry(Math.random() * 2 + 0.5, 0);
+        } else if(random < 0.6) {
+          geometry = new THREE.TetrahedronGeometry(Math.random() * 2 + 0.5);
+        } else {
+          geometry = new THREE.IcosahedronGeometry(Math.random() * 2 + 0.5, 0);
+        }
+        
+        const material = new THREE.MeshPhongMaterial({
+          color: 0xD4AF37,
+          transparent: true,
+          opacity: 0.4,
+          wireframe: true
+        });
+        
+        const mesh = new THREE.Mesh(geometry, material);
+        
+        mesh.position.x = (Math.random() - 0.5) * 40;
+        mesh.position.y = (Math.random() - 0.5) * 40;
+        mesh.position.z = (Math.random() - 0.5) * 40 - 10;
+        
+        mesh.rotation.x = Math.random() * Math.PI;
+        mesh.rotation.y = Math.random() * Math.PI;
+        
+        mesh.speedRotation = Math.random() * 0.01;
+        mesh.speedPosition = Math.random() * 0.01 + 0.005;
+        mesh.positionAmplitude = Math.random() * 0.5 + 0.5;
+        
+        scene.add(mesh);
+        shapes.push(mesh);
+      }
+      
+      // Add lighting
+      const ambientLight = new THREE.AmbientLight(0xFFFFFF, 0.1);
+      scene.add(ambientLight);
+      
+      const pointLight = new THREE.PointLight(0xFFFFFF, 0.5);
+      pointLight.position.set(0, 0, 5);
+      scene.add(pointLight);
+      
+      camera.position.z = 15;
+      
+      // Animation
+      function animate() {
+        requestAnimationFrame(animate);
+        
+        // Rotate particle mesh
+        particlesMesh.rotation.x += 0.0005;
+        particlesMesh.rotation.y += 0.0005;
+        
+        // Animate shapes
+        shapes.forEach(shape => {
+          shape.rotation.x += shape.speedRotation;
+          shape.rotation.y += shape.speedRotation * 0.8;
+          
+          shape.position.y += Math.sin(Date.now() * shape.speedPosition) * 0.01 * shape.positionAmplitude;
+          shape.position.x += Math.cos(Date.now() * shape.speedPosition) * 0.01 * shape.positionAmplitude;
+        });
+        
+        renderer.render(scene, camera);
+      }
+      
+      animate();
+      
+      // Handle window resize
+      window.addEventListener('resize', () => {
+        const newWidth = window.innerWidth;
+        const newHeight = window.innerHeight;
+        
+        camera.aspect = newWidth / newHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(newWidth, newHeight);
+      });
+    });
+
+    // Dark mode toggle
+    const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+    
+    function switchTheme(e) {
+      if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+      }
+    }
+    
+    toggleSwitch.addEventListener('change', switchTheme);
+    
+    // Check local storage for theme
+    const currentTheme = localStorage.getItem('theme');
+    if (currentTheme) {
+      document.documentElement.setAttribute('data-theme', currentTheme);
+      if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+      }
+    }
+
+    // Mobile menu toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav__menu');
+    const navLinks = document.querySelectorAll('.nav__link');
+    
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+    
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+      });
+    });
+
+    // Active link state on scroll
+    window.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll('section[id]');
+      const scrollY = window.pageYOffset;
+      
+      sections.forEach(current => {
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop - 50;
+        const sectionId = current.getAttribute('id');
+        
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+          document.querySelector('.nav__link[href*=' + sectionId + ']').classList.add('active');
+        } else {
+          document.querySelector('.nav__link[href*=' + sectionId + ']').classList.remove('active');
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
