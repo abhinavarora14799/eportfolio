@@ -741,8 +741,14 @@ header {
   align-items: center;
   border-radius: 50%;
   background-color: var(--primary-color);
-  color: #fff;
   transition: var(--transition);
+}
+
+.project__link-icon {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
 }
 
 .project__link:hover {
@@ -750,17 +756,23 @@ header {
   transform: translateY(-0.25rem);
 }
 
+.project__link:hover .project__link-icon {
+  /* Optional: Add hover effect for icon if needed */
+}
+
 /* Contact Section */
 .contact__container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: repeat(2, 1fr); */ /* Remove two-column layout */
+  grid-template-columns: 1fr; /* Make it single column */
   gap: 3rem;
 }
 
 .contact__info {
-  display: flex;
-  flex-direction: column;
+  display: grid; /* Use grid for the cards */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
   gap: 1.5rem;
+  /* Remove flex-direction if it was set */
 }
 
 .contact__card {
@@ -779,8 +791,10 @@ header {
 }
 
 .contact__card-icon {
-  font-size: 1.5rem;
-  color: var(--primary-color);
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: 0.5rem;
+  object-fit: contain;
 }
 
 .contact__card-title {
@@ -814,47 +828,6 @@ header {
 
 .contact__button:hover .contact__button-icon {
   transform: translateX(0.25rem);
-}
-
-.contact__form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.contact__form-div {
-  position: relative;
-}
-
-.contact__form-tag {
-  position: absolute;
-  top: -0.75rem;
-  left: 0.75rem;
-  background-color: var(--background-color);
-  padding: 0 0.5rem;
-  font-size: 0.875rem;
-  z-index: 10;
-}
-
-.contact__form-input {
-  width: 100%;
-  height: 3rem;
-  padding: 0 1rem;
-  border: 1px solid var(--border-color);
-  background-color: transparent;
-  border-radius: var(--radius);
-  font-size: 0.938rem;
-  color: var(--text-color);
-}
-
-.contact__form-area {
-  height: auto;
-}
-
-.contact__form-area textarea {
-  height: 10rem;
-  resize: none;
-  padding: 1rem;
 }
 
 /* Footer */
@@ -900,27 +873,28 @@ header {
   align-items: center !important;
   width: 3.5rem !important;
   height: 3.5rem !important;
-  color: var(--primary-color-dark) !important;
   background-color: var(--background-color) !important;
   border: 2px solid var(--primary-color) !important;
   border-radius: 50% !important;
-  font-size: 1.5rem !important;
   transition: var(--transition) !important;
   position: relative !important;
   margin: 0 0.5rem !important;
 }
 
-.footer__social-link i {
-  display: inline-block !important;
-  font-size: 1.5rem !important;
-  color: inherit !important;
+.footer__social-icon {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
 }
 
 .footer__social-link:hover {
-  color: var(--background-color) !important;
   background-color: var(--primary-color) !important;
   transform: translateY(-5px) !important;
   box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4) !important;
+}
+
+.footer__social-link:hover .footer__social-icon {
+  filter: brightness(0) invert(1);
 }
 
 /* Optional: Tooltip for icons */
@@ -1389,15 +1363,23 @@ main, header {
   /* Project card overlay always visible on mobile */
   .project__card .project__overlay {
     opacity: 1;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.85)); /* Slightly darker overlay for better contrast */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9));
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .project__card:hover .project__overlay {
+    opacity: 1;
   }
 
   .project__card .project__img {
-    transform: none; /* Disable zoom on mobile */
+    transform: none;
   }
 
   .project__card {
-    height: 300px; /* Slightly taller cards on mobile */
+    height: 300px;
   }
 }
 
@@ -1412,35 +1394,35 @@ main, header {
 
   /* Smaller footer icons on very small screens */
   .footer__social-link {
-    width: 2.8rem !important;
-    height: 2.8rem !important;
-    font-size: 1.2rem !important;
-    margin: 0 0.3rem !important; /* Adjust margin */
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+    margin: 0 0.25rem !important;
   }
 
-  .footer__social-link i {
-    font-size: 1.2rem !important;
+  .footer__social-icon {
+    width: 55%;
+    height: 55%;
   }
 }
 
 /* Hero section - mobile order adjustments */
 @media screen and (max-width: 992px) {
   .hero__content {
-    order: 2; /* Change image order to show first on mobile */
+    order: 2;
   }
   
   .hero__image {
-    order: 1; /* Change image order to show first on mobile */
+    order: 1;
   }
 }
 
 /* About section - mobile order adjustments */
 @media screen and (max-width: 992px) {
   .about__content {
-    order: 2; /* Content comes second */
+    order: 2;
   }
   
   .about__image {
-    order: 1; /* Image comes first */
+    order: 1;
   }
 }
